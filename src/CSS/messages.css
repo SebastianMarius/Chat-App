@@ -1,0 +1,153 @@
+.actualConversation h1 {
+    color: #ffffff;
+    margin-left: 5%;
+    margin-top: 4%;
+    font-size: 21px;
+    padding-bottom: 3%;
+}
+
+.emptyChatMessage {
+    height: auto;
+    background: linear-gradient(to right, #131a28, #151623, #141522, #130f19);
+    padding: 3%;
+    /* width: auto; */
+}
+
+.emptyChatMessage p {
+    color: #3e88cd;
+}
+
+.afterWelcomeUser {
+    color: #6987a4 !important;
+}
+
+.message {
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* background: green; */
+
+    position: relative;
+    padding-bottom: 2%;
+    margin-left: 4%;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+.message .photoReceive {
+    width: 39px;
+    height: 39px;
+    margin-top: 1%;
+    border-radius: 30%;
+}
+
+.receiveBubbleMsg {
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+    word-break: break-all;
+    max-width: 75%;
+    height: auto;
+
+    /* background: red; */
+    border-radius: 1.1em;
+    /* text-align: center; */
+    vertical-align: middle;
+    /* margin-left: 13%; */
+    background: #1a192e;
+    color: #a4a0b0;
+    padding: 15px;
+
+    margin-left: 2%;
+    /* position: absolute; */
+}
+
+.myMsg {
+    margin-left: auto;
+    flex-direction: row-reverse;
+    margin-right: 4%;
+}
+
+.myBuble {
+    margin-right: 2%;
+    background: #4d38a2;
+    color: #f2f0f8;
+}
+
+.inputMsg {
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
+.allOfTheMessagess {
+    overflow: scroll;
+    max-height: 75%;
+}
+
+.userInputMsg {
+    margin-top: auto;
+    width: 100%;
+    /* height: 12%; */
+    /* margin-top: -10%; */
+    padding-top: 30px;
+    z-index: 1;
+    height: fit-content !important;
+    /* background: red; */
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-content: center; */
+}
+
+.userInputMsg input {
+    height: 35px;
+    width: 100%;
+    margin-top: -3%;
+    margin-bottom: 2%;
+    margin-right: 4%;
+    margin-left: 1%;
+    padding-left: 2%;
+    outline: none;
+
+    background: none;
+
+    border: solid 2px #211d2a;
+    border-radius: 0.4vh;
+    color: #9e9ca6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: none;
+    overflow: scroll;
+    /* justify-self: center; */
+    /* align-self: center; */
+    /* margin-top: ; */
+}
+
+.userInputMsg input[type='text']::placeholder {
+    text-align: left;
+    color: #9e9ca6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.userInputMsg input:focus::placeholder {
+    color: transparent;
+}
+
+.userInputMsg .addDoc {
+    margin-top: -2%;
+    margin-left: 70%;
+    color: #646373;
+}
+
+.userInputMsg button {
+    margin-top: -5%;
+    margin-right: 4%;
+    color: #582cca;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

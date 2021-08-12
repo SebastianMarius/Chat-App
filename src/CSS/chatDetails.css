@@ -1,0 +1,148 @@
+.chatDetails {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    /* background: grey; */
+}
+
+.chatMembAndFiles {
+    height: 10%;
+    width: 100%;
+    /* margin-top: 10%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+
+    /* background: blue; */
+}
+
+.chatMembAndFiles p {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.chatMembAndFiles .activeChatMem {
+    border-bottom: 4px solid #7d4ddf;
+    color: #7d4ddf;
+    text-align: center;
+    font-weight: 500;
+}
+
+.chatMembAndFiles .nonactiveChatMem {
+    border-bottom: 2px solid #2e213d;
+    color: #504963;
+    text-align: center;
+    font-weight: 500;
+}
+
+.membersOfChat {
+    margin-left: 10%;
+    height: 50%;
+    color: #696a73;
+    overflow: scroll;
+    /* background: red; */
+}
+
+.allMembers {
+    overflow: scroll;
+    border-bottom: solid rgb(33, 25, 48);
+    padding-bottom: 7%;
+    margin-top: 9%;
+}
+
+.member {
+    width: 100%;
+    height: auto;
+    /* background: green; */
+    display: flex;
+    flex-direction: row;
+}
+
+.memberPhoto {
+    height: 45px;
+    width: 45px;
+    border-radius: 0.5rem;
+}
+
+.userDetails h2 {
+    color: #7f7792;
+    font-size: 12px;
+
+    margin-top: 0;
+}
+
+.userDetails h3 {
+    color: #4b455e;
+    font-size: 12px;
+
+    margin-top: 0;
+}
+
+.userDetails {
+    /* background: #696a73; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+
+    /* width: 80%; */
+}
+
+.member .chatIccon {
+    /* background: #7d4ddf; */
+    margin-left: auto;
+    margin-right: 3%;
+    width: 15%;
+    height: 40px;
+    margin-right: 8%;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #221833;
+}
+
+.addFriend {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.addFriend input {
+    background: none;
+
+    border: solid 2px #211d2a;
+    border-radius: 0.4vh;
+    color: #9e9ca6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    padding: 1.5%;
+    margin-left: 8%;
+}
+
+.addFriend input:focus {
+    border: 2px solid #1d1335;
+}
+
+.addFriend input[type='text']::placeholder {
+    text-align: left;
+    color: #67666b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.addFriend input:focus::placeholder {
+    color: transparent;
+}
+
+.addFriend button {
+    background: none;
+    border: none;
+    color: #582cca;
+    margin-left: 6%;
+}
