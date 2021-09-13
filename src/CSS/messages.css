@@ -111,9 +111,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: none;
     overflow: scroll;
-    /* justify-self: center; */
-    /* align-self: center; */
-    /* margin-top: ; */
+    
 }
 
 .userInputMsg input[type='text']::placeholder {
