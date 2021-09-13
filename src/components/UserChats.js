@@ -27,7 +27,7 @@ const loadUserConversation = (doc, functionArguments) => {
                 );
             });
     });
-    // console.log('ama');
+
 
     console.log('=============');
     functionArguments.setChatDetailsRender([]);
@@ -71,7 +71,7 @@ function UserChats(props) {
     }, []);
 
     const afterClikChat = (chatObject) => {
-        // <Link to={}></Link>
+       
 
         history.push('/Chats/' + chatObject.uid);
 
@@ -80,9 +80,7 @@ function UserChats(props) {
         setActualConvLoading(chatObject.uid);
         props.setChatUID(chatObject.uid);
 
-        // <Router>
-        // <Route path='/mortiimatii'></Route>;
-        // </Router>;
+
     };
 
     const functionArguments = {
@@ -157,129 +155,7 @@ function UserChats(props) {
                     );
                 })}
 
-                {/* messageBuble messageBubleNEWMSG */}
-
-                {/* <div className='allOfMessage'>
-                    <div className='messageBubleNEWMSG'>
-                        <div
-                            className='photo'
-                            style={{
-                                backgroundImage: `url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80)`,
-                            }}></div>
-                        <div className='personNameAndMsg'>
-                            <h3>User2</h3>
-
-                            <p> When csan wes hang out...</p>
-                        </div>
-
-                        <div className='messageTime'>69m</div>
-                    </div>
-                </div>
-                <div className='allOfMessage'>
-                    <div className='messageBuble'>
-                        <div
-                            className='photo'
-                            style={{
-                                backgroundImage: `url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80)`,
-                            }}></div>
-                        <div className='personNameAndMsg'>
-                            <h3>User3</h3>
-
-                            <p> When can we</p>
-                        </div>
-                        <div className='messageTime'>69m</div>
-                    </div>
-                </div>
-                <div className='allOfMessage'>
-                    <div className='messageBuble'>
-                        <div
-                            className='photo'
-                            style={{
-                                backgroundImage: `url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80)`,
-                            }}></div>
-                        <div className='personNameAndMsg'>
-                            <h3>User 5</h3>
-
-                            <p> When can we</p>
-                        </div>
-                        <div className='messageTime'>69m</div>
-                    </div>
-                </div>
-                <div className='allOfMessage'>
-                    <div className='messageBuble'>
-                        <div
-                            className='photo'
-                            style={{
-                                backgroundImage: `url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80)`,
-                            }}></div>
-                        <div className='personNameAndMsg'>
-                            <h3>User6</h3>
-
-                            <p> When can we</p>
-                        </div>
-                        <div className='messageTime'>69m</div>
-                    </div>
-                </div>
-                <div className='allOfMessage'>
-                    <div className='messageBuble'>
-                        <div
-                            className='photo'
-                            style={{
-                                backgroundImage: `url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80)`,
-                            }}></div>
-                        <div className='personNameAndMsg'>
-                            <h3>User 7</h3>
-
-                            <p> When can we hang out</p>
-                        </div>
-                        <div className='messageTime'>69m</div>
-                    </div>
-                </div>
-                <div className='allOfMessage'>
-                    <div className='messageBuble'>
-                        <div
-                            className='photo'
-                            style={{
-                                backgroundImage: `url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80s)`,
-                            }}></div>
-                        <div className='personNameAndMsg'>
-                            <h3>User9</h3>
-
-                            <p> When can we</p>
-                        </div>
-                        <div className='messageTime'>69m</div>
-                    </div>
-                </div>
-                <div className='allOfMessage'>
-                    <div className='messageBuble'>
-                        <div
-                            className='photo'
-                            style={{
-                                backgroundImage: `url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80)`,
-                            }}></div>
-                        <div className='personNameAndMsg'>
-                            <h3>User 10</h3>
-
-                            <p> When can we</p>
-                        </div>
-                        <div className='messageTime'>69m</div>
-                    </div>
-                </div>
-                <div className='allOfMessage'>
-                    <div className='messageBuble'>
-                        <div
-                            className='photo'
-                            style={{
-                                backgroundImage: `url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80)`,
-                            }}></div>
-                        <div className='personNameAndMsg'>
-                            <h3>User12</h3>
-
-                            <p> When can we</p>
-                        </div>
-                        <div className='messageTime'>69m</div>
-                    </div>
-                </div> */}
+             
             </div>
         </>
     );
