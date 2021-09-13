@@ -174,8 +174,6 @@ function AfterLogin(props) {
                                         chatUID={chatUID}
                                         user={currentUseru}
                                     />
-
-                                    {/* <input type='text' /> */}
                                 </div>
 
                                 <div className='chatDetails'>
@@ -184,10 +182,6 @@ function AfterLogin(props) {
                             </div>
                         </div>
                     </div>
-
-                    {/* <div className='userChats'> */}
-                    {/* {chatButton ? <UserChats /> : <div></div>} */}
-                    {/* </div> */}
                 </div>
             </>
         );
@@ -195,11 +189,8 @@ function AfterLogin(props) {
 
     return (
         <>
-            {/* <h1>{defaultAuth.currentUser.displayName + 'S'}</h1> */}
             <button onClick={test}>Click meeee</button>
             {currentUseru ? renderAfterLogin() : <div>NU S O RANDAT</div>}
-            {/* <Test /> */}
-            {/* <h1>{user.displayName}</h1> */}
         </>
     );
 }
